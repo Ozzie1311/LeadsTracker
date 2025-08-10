@@ -1,13 +1,9 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js'
-import {
-  getDatabase,
-  ref,
-  push,
-  onValue,
-  remove,
-} from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js'
+import { getDatabase, ref, push, onValue, remove } from 'https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js'
 
-const firebaseConfig = {}
+const firebaseConfig = {
+  databaseURL: 'https://leads-tracker-app-bd0a3-default-rtdb.firebaseio.com',
+}
 
 const app = initializeApp(firebaseConfig)
 const database = getDatabase(app)
