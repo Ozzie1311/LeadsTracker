@@ -20,9 +20,9 @@ tabBtn.addEventListener('click', function () {
 })
 
 function render(leads) {
-  let listItems = ''
+  let itemsList = ''
   for (let i = 0; i < leads.length; i++) {
-    listItems += `
+    itemsList += `
             <li>
                 <a target='_blank' href='${leads[i]}'>
                     ${leads[i]}
@@ -30,7 +30,7 @@ function render(leads) {
             </li>
         `
   }
-  ulEl.innerHTML = listItems
+  ulEl.innerHTML = itemsList
 }
 
 deleteBtn.addEventListener('dblclick', function () {
